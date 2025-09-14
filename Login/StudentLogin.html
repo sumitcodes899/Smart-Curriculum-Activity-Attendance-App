@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Scholar - Student Login</title>
+    <link rel="stylesheet" href="student-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h1 class="login-title">Smart Scholar</h1>
+                <p class="login-subtitle">Sign in to your account</p>
+            </div>
+            
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-input" 
+                        placeholder="Enter your email address"
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        class="form-input" 
+                        placeholder="Enter your password"
+                        required
+                    >
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Sign In
+                </button>
+                
+                <div class="form-footer">
+                    <p class="signup-text">
+                        Don't have an account? 
+                        <a href="#" class="signup-link" id="signupLink">Sign up</a>
+                    </p>
+                </div>
+            </form>
+            
+            <!-- Sign Up Form (Hidden by default) -->
+            <form class="signup-form" id="signupForm" style="display: none;">
+                <div class="form-group">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input 
+                        type="text" 
+                        id="fullName" 
+                        name="fullName" 
+                        class="form-input" 
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="signupEmail" class="form-label">Email</label>
+                    <input 
+                        type="email" 
+                        id="signupEmail" 
+                        name="signupEmail" 
+                        class="form-input" 
+                        placeholder="Enter your email address"
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="signupPassword" class="form-label">Password</label>
+                    <input 
+                        type="password" 
+                        id="signupPassword" 
+                        name="signupPassword" 
+                        class="form-input" 
+                        placeholder="Create a password"
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="role" class="form-label">Role</label>
+                    <select id="role" name="role" class="form-select" required>
+                        <option value="student" selected>Student</option>
+                        <option value="faculty">Faculty</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-user-plus"></i>
+                    Create Account
+                </button>
+                
+                <div class="form-footer">
+                    <p class="signup-text">
+                        Already have an account? 
+                        <a href="#" class="signup-link" id="loginLink">Sign in</a>
+                    </p>
+                </div>
+            </form>
+            
+            <!-- Loading Spinner -->
+            <div class="loading-spinner" id="loadingSpinner" style="display: none;">
+                <div class="spinner"></div>
+                <p>Signing in...</p>
+            </div>
+            
+            <!-- Success/Error Messages -->
+            <div class="message-container" id="messageContainer" style="display: none;">
+                <div class="message" id="message">
+                    <i class="fas fa-check-circle"></i>
+                    <span id="messageText"></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="background-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </div>
+    
+    <script src="student-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Scholar - Your Academic Companion</title>
+    <link rel="stylesheet" href="landing-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <span class="logo-text">Smart Scholar</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Smart Scholar</h1>
+                    <p class="hero-subtitle">
+                        Your all-in-one academic companion for tracking hackathons, internships, achievements, and campus activities.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="scrollToFeatures()">
+                            <i class="fas fa-rocket"></i>
+                            Get Started
+                        </button>
+                        <button class="btn-secondary" onclick="redirectToLogin()">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Sign In
+                        </button>
+                    </div>
+                    
+                    <p class="hero-tagline">
+                        Empowering students to grow smarter, faster, and more organized.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="features-grid">
+                    <!-- Hackathon Tracking -->
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="feature-title">Hackathon Tracking</h3>
+                        <p class="feature-description">
+                            Easily manage your hackathon journeys, achievements, and digital certificates.
+                        </p>
+                    </div>
+
+                    <!-- Internship Management -->
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="feature-title">Internship Management</h3>
+                        <p class="feature-description">
+                            Organize internship offers, progress, and store important documents in one place.
+                        </p>
+                    </div>
+
+                    <!-- Event Participation -->
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3 class="feature-title">Event Participation</h3>
+                        <p class="feature-description">
+                            Track campus events, workshops, and your overall participation history.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Attendance Section -->
+        <section class="attendance-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h2 class="section-title">Smart Student Attendance Management</h2>
+                    <p class="section-subtitle">
+                        Revolutionizing how educational institutions track and manage student attendance with cutting-edge technology
+                    </p>
+                </div>
+                
+                <div class="attendance-content">
+                    <div class="attendance-overview">
+                        <div class="overview-card">
+                            <div class="overview-icon">
+                                <i class="fas fa-qrcode"></i>
+                            </div>
+                            <h3>QR Code Attendance</h3>
+                            <p>Students scan unique QR codes displayed in classrooms for instant, contactless attendance marking. Reduces manual errors and saves valuable class time.</p>
+                        </div>
+                        
+                        <div class="overview-card">
+                            <div class="overview-icon">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <h3>Bluetooth/Wi-Fi Proximity</h3>
+                            <p>Automatic attendance detection when students enter the classroom using their mobile devices. Seamless integration with existing campus infrastructure.</p>
+                        </div>
+                        
+                        <div class="overview-card">
+                            <div class="overview-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h3>Face Recognition</h3>
+                            <p>Advanced facial recognition technology for secure and accurate attendance tracking. Works in various lighting conditions with high precision.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="attendance-benefits">
+                        <div class="benefits-content">
+                            <h3>Key Benefits for Educational Institutions</h3>
+                            <div class="benefits-grid">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4>Time Efficiency</h4>
+                                        <p>Save up to 75% of time spent on manual attendance marking, allowing teachers to focus on instruction.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4>Real-time Analytics</h4>
+                                        <p>Instant attendance reports and analytics dashboard for administrators and faculty.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4>Automated Notifications</h4>
+                                        <p>Smart alerts for low attendance, helping identify students who need additional support.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4>Data Security</h4>
+                                        <p>Enterprise-grade security ensuring student data privacy and compliance with educational regulations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="attendance-visual">
+                            <div class="visual-card">
+                                <h4>Live Attendance Dashboard</h4>
+                                <div class="dashboard-preview">
+                                    <div class="class-info">
+                                        <span class="class-name">Computer Science 101</span>
+                                        <span class="attendance-count">45/50 Present</span>
+                                    </div>
+                                    <div class="attendance-bar">
+                                        <div class="attendance-fill" style="width: 90%"></div>
+                                    </div>
+                                    <div class="recent-activity">
+                                        <div class="activity-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>John Doe checked in at 9:15 AM</span>
+                                        </div>
+                                        <div class="activity-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Jane Smith checked in at 9:16 AM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Activity Section -->
+        <section class="curriculum-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h2 class="section-title">Comprehensive Curriculum Activity Management</h2>
+                    <p class="section-subtitle">
+                        Streamline curriculum planning, track learning objectives, and enhance educational outcomes with intelligent activity management
+                    </p>
+                </div>
+                
+                <div class="curriculum-content">
+                    <div class="curriculum-overview">
+                        <div class="curriculum-card">
+                            <div class="curriculum-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3>Smart Scheduling</h3>
+                            <p>Intelligent timetable management that optimizes class schedules, room allocation, and resource utilization across the institution.</p>
+                        </div>
+                        
+                        <div class="curriculum-card">
+                            <div class="curriculum-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <h3>Learning Objectives Tracking</h3>
+                            <p>Monitor curriculum coverage, track learning outcomes, and ensure comprehensive educational content delivery across all subjects.</p>
+                        </div>
+                        
+                        <div class="curriculum-card">
+                            <div class="curriculum-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <h3>Faculty Management</h3>
+                            <p>Efficient faculty allocation, workload distribution, and performance tracking to optimize teaching resources and maintain quality standards.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="curriculum-features">
+                        <div class="features-showcase">
+                            <h3>Advanced Curriculum Features</h3>
+                            
+                            <div class="feature-showcase-grid">
+                                <div class="showcase-item">
+                                    <div class="showcase-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <div class="showcase-content">
+                                        <h4>AI-Powered Insights</h4>
+                                        <p>Machine learning algorithms analyze curriculum effectiveness and suggest improvements for better learning outcomes.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="showcase-item">
+                                    <div class="showcase-icon">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </div>
+                                    <div class="showcase-content">
+                                        <h4>Real-time Synchronization</h4>
+                                        <p>Seamless integration with existing educational systems, ensuring data consistency across all platforms.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="showcase-item">
+                                    <div class="showcase-icon">
+                                        <i class="fas fa-file-alt"></i>
+                                    </div>
+                                    <div class="showcase-content">
+                                        <h4>Automated Reporting</h4>
+                                        <p>Generate comprehensive reports on curriculum coverage, student progress, and faculty performance automatically.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="showcase-item">
+                                    <div class="showcase-icon">
+                                        <i class="fas fa-chalkboard-teacher"></i>
+                                    </div>
+                                    <div class="showcase-content">
+                                        <h4>Interactive Teaching Tools</h4>
+                                        <p>Digital tools for lesson planning, content delivery, and student engagement tracking.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="curriculum-stats">
+                            <div class="stats-container">
+                                <h4>Impact Metrics</h4>
+                                <div class="stats-grid">
+                                    <div class="stat-card">
+                                        <div class="stat-icon">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="stat-number">85%</div>
+                                            <div class="stat-label">Curriculum Coverage</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="stat-card">
+                                        <div class="stat-icon">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="stat-number">92%</div>
+                                            <div class="stat-label">Faculty Satisfaction</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="stat-card">
+                                        <div class="stat-icon">
+                                            <i class="fas fa-graduation-cap"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <div class="stat-number">78%</div>
+                                            <div class="stat-label">Student Performance</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem & Solution Section -->
+        <section class="problem-solution">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Addressing Educational Challenges</h2>
+                    <p class="section-subtitle">
+                        Smart Scholar tackles the critical issues facing modern educational institutions
+                    </p>
+                </div>
+                
+                <div class="problem-content">
+                    <!-- Problem Statement -->
+                    <div class="problem-statement">
+                        <div class="problem-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 class="problem-title">The Current Challenge</h3>
+                        <p class="problem-description">
+                            Many educational institutions still depend on manual attendance systems, which are time-consuming and error-prone. Teachers spend a significant portion of class time marking attendance, reducing valuable instructional hours. Additionally, students often waste free periods with unproductive activities due to a lack of structured guidance. This leads to poor time management and reduced alignment with long-term academic or career goals. There is also a gap in personalized learning support during idle classroom hours. Institutions currently lack tools that integrate daily schedules with individual student planning and automated tracking.
+                        </p>
+                    </div>
+                    
+                    <!-- Impact Section -->
+                    <div class="impact-section">
+                        <div class="impact-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="impact-title">Why This Problem Needs to Be Solved</h3>
+                        <p class="impact-description">
+                            This issue impacts both administrative efficiency and student development. Automating attendance saves teachers' time and ensures more accurate records. Additionally, providing students with structured personal development activities during free time helps improve productivity, goal clarity, and learning outcomes. Institutions can also gain better insight into student behavior and engagement, allowing for more targeted support.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Expected Outcomes -->
+                <div class="outcomes-section">
+                    <div class="outcomes-header">
+                        <div class="outcomes-icon">
+                            <i class="fas fa-target"></i>
+                        </div>
+                        <h3 class="outcomes-title">Expected Outcomes</h3>
+                    </div>
+                    
+                    <div class="outcomes-grid">
+                        <div class="outcome-card">
+                            <div class="outcome-icon">
+                                <i class="fas fa-qrcode"></i>
+                            </div>
+                            <h4>Automated Attendance</h4>
+                            <p>Automatically marks student attendance based on the daily timetable using QR code, Bluetooth/Wi-Fi proximity, or face recognition.</p>
+                        </div>
+                        
+                        <div class="outcome-card">
+                            <div class="outcome-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <h4>Real-time Display</h4>
+                            <p>Displays real-time attendance on a classroom screen for immediate visibility and transparency.</p>
+                        </div>
+                        
+                        <div class="outcome-card">
+                            <div class="outcome-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Personalized Tasks</h4>
+                            <p>Suggests personalized academic tasks during free periods based on the student's interests, strengths, and career goals.</p>
+                        </div>
+                        
+                        <div class="outcome-card">
+                            <div class="outcome-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h4>Daily Routine Generation</h4>
+                            <p>Generates a daily routine combining class schedule, free time, and long-term personal goals.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="implementation-note">
+                        <div class="note-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <p>The app will require minimal infrastructure and be usable by both students and staff with basic training.</p>
+                    </div>
+                </div>
+                
+                <!-- Stakeholders Section -->
+                <div class="stakeholders-section">
+                    <div class="stakeholders-header">
+                        <div class="stakeholders-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="stakeholders-title">Relevant Stakeholders & Beneficiaries</h3>
+                    </div>
+                    
+                    <div class="stakeholders-grid">
+                        <div class="stakeholder-card">
+                            <div class="stakeholder-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h4>Students</h4>
+                            <p>Enhanced learning experience with personalized guidance and efficient time management.</p>
+                        </div>
+                        
+                        <div class="stakeholder-card">
+                            <div class="stakeholder-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <h4>Teachers</h4>
+                            <p>Reduced administrative burden with automated attendance and more instructional time.</p>
+                        </div>
+                        
+                        <div class="stakeholder-card">
+                            <div class="stakeholder-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h4>College Administrators</h4>
+                            <p>Improved institutional efficiency and better student engagement tracking.</p>
+                        </div>
+                        
+                        <div class="stakeholder-card">
+                            <div class="stakeholder-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4>Career Counselors</h4>
+                            <p>Better insights into student progress and personalized guidance opportunities.</p>
+                        </div>
+                        
+                        <div class="stakeholder-card">
+                            <div class="stakeholder-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4>Education Departments</h4>
+                            <p>Alignment with NEP 2020 recommendations for personalized and experiential learning.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supporting Data Section -->
+                <div class="supporting-data-section">
+                    <div class="data-header">
+                        <div class="data-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="data-title">Supporting Data</h3>
+                    </div>
+                    
+                    <div class="data-content">
+                        <p class="data-description">
+                            Our solution is backed by comprehensive surveys and reports on classroom time usage, student productivity, and NEP 2020 recommendations emphasizing personalized and experiential learning. The data clearly shows the need for automated attendance systems and structured personal development opportunities during free periods.
+                        </p>
+                        
+                        <div class="data-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">75%</div>
+                                <div class="stat-label">Time Saved on Attendance</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">90%</div>
+                                <div class="stat-label">Accuracy Improvement</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">60%</div>
+                                <div class="stat-label">Increased Student Engagement</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Features Section -->
+        <section class="additional-features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Choose Smart Scholar?</h2>
+                    <p class="section-subtitle">
+                        Join thousands of students who are already using Smart Scholar to excel in their academic journey.
+                    </p>
+                </div>
+                
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-item-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="feature-item-content">
+                            <h4>Progress Tracking</h4>
+                            <p>Monitor your academic progress with detailed analytics and insights.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-item-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="feature-item-content">
+                            <h4>Mobile Access</h4>
+                            <p>Access your academic portfolio anywhere, anytime with our mobile app.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-item-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-item-content">
+                            <h4>Secure Storage</h4>
+                            <p>Your achievements and documents are safely stored with enterprise-grade security.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <span class="logo-text">Smart Scholar</span>
+                    </div>
+                    <p class="footer-description">
+                        Your all-in-one academic companion for success.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#demo">Demo</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#help">Help Center</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#docs">Documentation</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                            <li><a href="#privacy">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Smart Scholar. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Background Elements -->
+    <div class="background-elements">
+        <div class="bg-shape bg-shape-1"></div>
+        <div class="bg-shape bg-shape-2"></div>
+        <div class="bg-shape bg-shape-3"></div>
+        <div class="bg-shape bg-shape-4"></div>
+    </div>
+
+    <script src="landing-script.js"></script>
+</body>
+</html>

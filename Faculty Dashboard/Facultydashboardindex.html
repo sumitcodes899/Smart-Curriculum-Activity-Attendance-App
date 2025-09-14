@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Scholar - Teacher Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Smart Scholar</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#teachers" class="nav-link">Teachers</a>
+                <a href="#students" class="nav-link">Students</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-secondary">Login</button>
+                <button class="btn-primary">Get Started</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Transform Your Teaching with
+                    <span class="gradient-text">Smart Scholar</span>
+                </h1>
+                <p class="hero-description">
+                    The ultimate platform for managing curriculum, tracking student progress, 
+                    and enhancing classroom engagement. Streamline your teaching workflow 
+                    with our intelligent tools and analytics.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn-primary btn-large">
+                        <i class="fas fa-rocket"></i>
+                        Start Free Trial
+                    </button>
+                    <button class="btn-outline btn-large">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Teachers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Students</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <div class="dashboard-nav">
+                            <div class="nav-item active">Dashboard</div>
+                            <div class="nav-item">Students</div>
+                            <div class="nav-item">Curriculum</div>
+                            <div class="nav-item">Analytics</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="dashboard-cards">
+                            <div class="card">
+                                <div class="card-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Total Students</h3>
+                                    <p class="card-number">247</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Active Courses</h3>
+                                    <p class="card-number">12</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Progress Rate</h3>
+                                    <p class="card-number">87%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h3>Student Performance</h3>
+                                <div class="chart-legend">
+                                    <span class="legend-item">
+                                        <span class="legend-color" style="background: #DC2626;"></span>
+                                        Excellent
+                                    </span>
+                                    <span class="legend-item">
+                                        <span class="legend-color" style="background: #F87171;"></span>
+                                        Good
+                                    </span>
+                                    <span class="legend-item">
+                                        <span class="legend-color" style="background: #FECACA;"></span>
+                                        Average
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chart-bars">
+                                <div class="bar" style="height: 80%;"></div>
+                                <div class="bar" style="height: 60%;"></div>
+                                <div class="bar" style="height: 90%;"></div>
+                                <div class="bar" style="height: 75%;"></div>
+                                <div class="bar" style="height: 85%;"></div>
+                                <div class="bar" style="height: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features for Modern Education</h2>
+                <p class="section-description">
+                    Everything you need to manage your classroom, track progress, and engage students
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Smart Scholar Management</h3>
+                    <p>Create, organize, and manage your curriculum with our intuitive tools. Track learning objectives and ensure comprehensive coverage.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>Attendance Tracking</h3>
+                    <p>Automated attendance tracking with real-time notifications and detailed reports for better student management.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Analytics & Insights</h3>
+                    <p>Get detailed insights into student performance, engagement levels, and learning patterns with our advanced analytics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Access</h3>
+                    <p>Access your dashboard anywhere, anytime with our fully responsive mobile application for iOS and Android.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Student Collaboration</h3>
+                    <p>Foster collaboration with group projects, peer reviews, and interactive learning activities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Private</h3>
+                    <p>Enterprise-grade security ensures your data and student information are always protected and private.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teacher Dashboard Section -->
+    <section class="teacher-dashboard" id="teachers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Faculty Management Dashboard</h2>
+                <p class="section-description">
+                    Comprehensive faculty management system with class allocation, performance tracking, and administrative tools
+                </p>
+            </div>
+
+            <!-- Faculty Overview Panel -->
+            <div class="faculty-overview">
+                <h3 class="dashboard-subtitle">Faculty Overview</h3>
+                <div class="faculty-cards">
+                    <div class="faculty-card">
+                        <div class="faculty-photo">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="faculty-info">
+                            <h4>Mr. Narendra Dhakad</h4>
+                            <p class="faculty-role">Head of Department - Computer Science</p>
+                            <p class="faculty-subjects">OOPM (Object Oriented Programming & Methodology)</p>
+                            <div class="faculty-contact">
+                                <span><i class="fas fa-envelope"></i> narendra.dhakad@smartscholar.edu</span>
+                                <span><i class="fas fa-phone"></i> +91 98765 43210</span>
+                            </div>
+                        </div>
+                        <div class="faculty-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">Classes</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">156</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card">
+                        <div class="faculty-photo">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="faculty-info">
+                            <h4>Mrs. Pratyancha Verma</h4>
+                            <p class="faculty-role">Senior Lecturer - Mathematics</p>
+                            <p class="faculty-subjects">TOC (Theory of Computation), Major Project, Computer Workshop</p>
+                            <div class="faculty-contact">
+                                <span><i class="fas fa-envelope"></i> pratyancha.verma@smartscholar.edu</span>
+                                <span><i class="fas fa-phone"></i> +91 98765 43211</span>
+                            </div>
+                        </div>
+                        <div class="faculty-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Classes</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">120</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card">
+                        <div class="faculty-photo">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="faculty-info">
+                            <h4>Mrs. Pratibha Chaurasia</h4>
+                            <p class="faculty-role">Assistant Professor - Database & Systems</p>
+                            <p class="faculty-subjects">DBMS, Python Programming, EEE</p>
+                            <div class="faculty-contact">
+                                <span><i class="fas fa-envelope"></i> pratibha.chaurasia@smartscholar.edu</span>
+                                <span><i class="fas fa-phone"></i> +91 98765 43212</span>
+                            </div>
+                        </div>
+                        <div class="faculty-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Classes</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">85</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card">
+                        <div class="faculty-photo">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="faculty-info">
+                            <h4>Miss Ananya Shrivastav</h4>
+                            <p class="faculty-role">Lecturer - Web & Mobile Computing</p>
+                            <p class="faculty-subjects">WMC (Web & Mobile Computing), Discrete Structures</p>
+                            <div class="faculty-contact">
+                                <span><i class="fas fa-envelope"></i> ananya.shrivastav@smartscholar.edu</span>
+                                <span><i class="fas fa-phone"></i> +91 98765 43213</span>
+                            </div>
+                        </div>
+                        <div class="faculty-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Classes</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">95</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card">
+                        <div class="faculty-photo">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="faculty-info">
+                            <h4>Mrs. Roshni Jaiswal</h4>
+                            <p class="faculty-role">Assistant Professor - Security & Management</p>
+                            <p class="faculty-subjects">Cyber Security, Digital Marketing Management, Java Programming</p>
+                            <div class="faculty-contact">
+                                <span><i class="fas fa-envelope"></i> roshni.jaiswal@smartscholar.edu</span>
+                                <span><i class="fas fa-phone"></i> +91 98765 43214</span>
+                            </div>
+                        </div>
+                        <div class="faculty-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Classes</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">78</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card">
+                        <div class="faculty-photo">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="faculty-info">
+                            <h4>Mr. Vivek Shrivastav</h4>
+                            <p class="faculty-role">Senior Lecturer - Computer Science</p>
+                            <p class="faculty-subjects">Digital Systems, Data Structures, Programming</p>
+                            <div class="faculty-contact">
+                                <span><i class="fas fa-envelope"></i> vivek.shrivastav@smartscholar.edu</span>
+                                <span><i class="fas fa-phone"></i> +91 98765 43215</span>
+                            </div>
+                        </div>
+                        <div class="faculty-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">Classes</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">142</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card">
+                        <div class="faculty-photo">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="faculty-info">
+                            <h4>Mrs. Vineta Verma</h4>
+                            <p class="faculty-role">Assistant Professor - Information Technology</p>
+                            <p class="faculty-subjects">Fundamentals of Information, Computer Basics</p>
+                            <div class="faculty-contact">
+                                <span><i class="fas fa-envelope"></i> vineta.verma@smartscholar.edu</span>
+                                <span><i class="fas fa-phone"></i> +91 98765 43216</span>
+                            </div>
+                        </div>
+                        <div class="faculty-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Classes</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">68</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Class & Subject Allocation -->
+            <div class="allocation-section">
+                <h3 class="dashboard-subtitle">Class & Subject Allocation</h3>
+                <div class="allocation-grid">
+                    <div class="allocation-card">
+                        <h4>Computer Science Department</h4>
+                        <div class="subject-list">
+                            <div class="subject-item">
+                                <span class="subject-name">OOPM (Object Oriented Programming & Methodology)</span>
+                                <span class="faculty-name">Mr. Narendra Dhakad</span>
+                                <span class="class-info">CS-301</span>
+                            </div>
+                            <div class="subject-item">
+                                <span class="subject-name">DIGITALS (Digital Systems)</span>
+                                <span class="faculty-name">Mr. Vivek Shrivastav</span>
+                                <span class="class-info">CS-302</span>
+                            </div>
+                            <div class="subject-item">
+                                <span class="subject-name">DATA S (Data Structures)</span>
+                                <span class="faculty-name">Mr. Vivek Shrivastav</span>
+                                <span class="class-info">CS-303</span>
+                            </div>
+                            <div class="subject-item">
+                                <span class="subject-name">WMC (Web & Mobile Computing)</span>
+                                <span class="faculty-name">Miss Ananya Shrivastav</span>
+                                <span class="class-info">CS-304</span>
+                            </div>
+                            <div class="subject-item">
+                                <span class="subject-name">DISCRETE S (Discrete Structures)</span>
+                                <span class="faculty-name">Miss Ananya Shrivastav</span>
+                                <span class="class-info">CS-305</span>
+                            </div>
+                            <div class="subject-item">
+                                <span class="subject-name">JAVA (Java Programming)</span>
+                                <span class="faculty-name">Mrs. Roshni Jaiswal</span>
+                                <span class="class-info">CS-306</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="allocation-card">
+                        <h4>Mathematics Department</h4>
+                        <div class="subject-list">
+                            <div class="subject-item">
+                                <span class="subject-name">TOC (Theory of Computation)</span>
+                                <span class="faculty-name">Mrs. Pratyancha Verma</span>
+                                <span class="class-info">MATH-301</span>
+                            </div>
+                            <div class="subject-item">
+                                <span class="subject-name">MAJOR PRO (Major Project)</span>
+                                <span class="faculty-name">Mrs. Pratyancha Verma</span>
+                                <span class="class-info">MATH-302</span>
+                            </div>
+                            <div class="subject-item">
+                                <span class="subject-name">COMP. WO (Computer Workshop)</span>
+                                <span class="faculty-name">Mrs. Pratyancha Verma</span>
+                                <span class="class-info">MATH-303</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="allocation-card">
+                        <h4>Database & Systems Department</h4>
+                        <div class="subject-list">
+                            <div class="subject-item">
+                                <span class="subject-name">DBMS (Database Management System)</span>
+                                <span class="faculty-name">Mrs. Pratibha Chaurasia</span>
+                                <span class="class-info">DB-301</span>
+                            </div>
+                            <div class="subject-item">
+                                <span class="subject-name">PYTHON (Python Programming)</span>
+                                <span class="faculty-name">Mrs. Pratibha Chaurasia</span>
+                                <span class="class-info">DB-302</span>
+                            </div>
+                            <div class="subject-item">
+                                <span class="subject-name">EEE (Electrical & Electronics Engineering)</span>
+                                <span class="faculty-name">Mrs. Pratibha Chaurasia</span>
+                                <span class="class-info">DB-303</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="allocation-card">
+                        <h4>Security & Management Department</h4>
+                        <div class="subject-list">
+                            <div class="subject-item">
+                                <span class="subject-name">CYBER SPY (Cyber Security)</span>
+                                <span class="faculty-name">Mrs. Roshni Jaiswal</span>
+                                <span class="class-info">SEC-301</span>
+                            </div>
+                            <div class="subject-item">
+                                <span class="subject-name">DMM (Digital Marketing Management)</span>
+                                <span class="faculty-name">Mrs. Roshni Jaiswal</span>
+                                <span class="class-info">SEC-302</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="allocation-card">
+                        <h4>Foundation & Communication Department</h4>
+                        <div class="subject-list">
+                            <div class="subject-item">
+                                <span class="subject-name">FOI (Fundamentals of Information)</span>
+                                <span class="faculty-name">Mrs. Vineta Verma</span>
+                                <span class="class-info">FOC-301</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Attendance & Performance Reports -->
+            <div class="reports-section">
+                <h3 class="dashboard-subtitle">Attendance & Performance Reports</h3>
+                <div class="reports-grid">
+                    <div class="report-card">
+                        <h4>Overall Attendance Summary</h4>
+                        <div class="attendance-stats">
+                            <div class="attendance-item">
+                                <span class="attendance-label">Average Attendance</span>
+                                <span class="attendance-value">87.5%</span>
+                                <div class="attendance-bar">
+                                    <div class="attendance-fill" style="width: 87.5%"></div>
+                                </div>
+                            </div>
+                            <div class="attendance-item">
+                                <span class="attendance-label">Classes with >90% Attendance</span>
+                                <span class="attendance-value">12</span>
+                            </div>
+                            <div class="attendance-item">
+                                <span class="attendance-label">Classes with <75% Attendance</span>
+                                <span class="attendance-value">3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report-card">
+                        <h4>Test Performance Overview</h4>
+                        <div class="performance-stats">
+                            <div class="performance-item">
+                                <span class="performance-label">Average Test Score</span>
+                                <span class="performance-value">78.2%</span>
+                            </div>
+                            <div class="performance-item">
+                                <span class="performance-label">Tests Conducted</span>
+                                <span class="performance-value">45</span>
+                            </div>
+                            <div class="performance-item">
+                                <span class="performance-label">Students Passed</span>
+                                <span class="performance-value">92.3%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report-card">
+                        <h4>Faculty Workload</h4>
+                        <div class="workload-stats">
+                            <div class="workload-item">
+                                <span class="workload-label">Total Classes per Week</span>
+                                <span class="workload-value">18</span>
+                            </div>
+                            <div class="workload-item">
+                                <span class="workload-label">Average Students per Class</span>
+                                <span class="workload-value">32</span>
+                            </div>
+                            <div class="workload-item">
+                                <span class="workload-label">Office Hours per Week</span>
+                                <span class="workload-value">12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Announcements & Notifications -->
+            <div class="announcements-section">
+                <h3 class="dashboard-subtitle">Announcements & Notifications</h3>
+                <div class="announcements-grid">
+                    <div class="announcement-card urgent">
+                        <div class="announcement-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="announcement-content">
+                            <h4>Faculty Meeting - Tomorrow 2:00 PM</h4>
+                            <p>Important discussion about upcoming semester curriculum changes and assessment patterns.</p>
+                            <span class="announcement-time">2 hours ago</span>
+                        </div>
+                    </div>
+
+                    <div class="announcement-card">
+                        <div class="announcement-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="announcement-content">
+                            <h4>Mid-term Examination Schedule</h4>
+                            <p>Mid-term examinations will be conducted from March 15-25. Please submit your question papers by March 10.</p>
+                            <span class="announcement-time">1 day ago</span>
+                        </div>
+                    </div>
+
+                    <div class="announcement-card">
+                        <div class="announcement-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="announcement-content">
+                            <h4>Professional Development Workshop</h4>
+                            <p>Join us for a workshop on "Modern Teaching Methods" on March 20th. Registration is now open.</p>
+                            <span class="announcement-time">3 days ago</span>
+                        </div>
+                    </div>
+
+                    <div class="announcement-card">
+                        <div class="announcement-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="announcement-content">
+                            <h4>Student Performance Review</h4>
+                            <p>Quarterly student performance review meeting scheduled for March 30th. Please prepare your reports.</p>
+                            <span class="announcement-time">5 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schedule/Timetable -->
+            <div class="schedule-section">
+                <h3 class="dashboard-subtitle">Today's Schedule</h3>
+                <div class="schedule-container">
+                    <div class="schedule-timeline">
+                        <div class="schedule-item">
+                            <div class="schedule-time">09:00 - 10:00</div>
+                            <div class="schedule-details">
+                                <h4>Data Structures - CS-201</h4>
+                                <p>Mr. Narendra Dhakad | Room 101</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">10:00 - 11:00</div>
+                            <div class="schedule-details">
+                                <h4>Calculus - MATH-201</h4>
+                                <p>Mrs. Pratyancha Verma | Room 102</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">11:00 - 12:00</div>
+                            <div class="schedule-details">
+                                <h4>Physics Lab - PHY-201</h4>
+                                <p>Mrs. Pratibha Chaurasia | Lab 1</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">14:00 - 15:00</div>
+                            <div class="schedule-details">
+                                <h4>Faculty Meeting</h4>
+                                <p>All Faculty | Conference Room</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">15:00 - 16:00</div>
+                            <div class="schedule-details">
+                                <h4>Office Hours</h4>
+                                <p>Mr. Vivek Shrivastav | Office 205</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Section -->
+            <div class="analytics-section">
+                <h3 class="dashboard-subtitle">Analytics & Insights</h3>
+                <div class="analytics-grid">
+                    <div class="chart-card">
+                        <h4>Faculty Workload Distribution</h4>
+                        <div class="chart-container">
+                            <div class="bar-chart">
+                                <div class="bar-item">
+                                    <span class="bar-label">Mr. Narendra Dhakad</span>
+                                    <div class="bar">
+                                        <div class="bar-fill" style="width: 85%"></div>
+                                    </div>
+                                    <span class="bar-value">85%</span>
+                                </div>
+                                <div class="bar-item">
+                                    <span class="bar-label">Mrs. Pratyancha Verma</span>
+                                    <div class="bar">
+                                        <div class="bar-fill" style="width: 70%"></div>
+                                    </div>
+                                    <span class="bar-value">70%</span>
+                                </div>
+                                <div class="bar-item">
+                                    <span class="bar-label">Mrs. Pratibha Chaurasia</span>
+                                    <div class="bar">
+                                        <div class="bar-fill" style="width: 60%"></div>
+                                    </div>
+                                    <span class="bar-value">60%</span>
+                                </div>
+                                <div class="bar-item">
+                                    <span class="bar-label">Miss Ananya Shrivastav</span>
+                                    <div class="bar">
+                                        <div class="bar-fill" style="width: 75%"></div>
+                                    </div>
+                                    <span class="bar-value">75%</span>
+                                </div>
+                                <div class="bar-item">
+                                    <span class="bar-label">Mrs. Roshni Jaiswal</span>
+                                    <div class="bar">
+                                        <div class="bar-fill" style="width: 55%"></div>
+                                    </div>
+                                    <span class="bar-value">55%</span>
+                                </div>
+                                <div class="bar-item">
+                                    <span class="bar-label">Mr. Vivek Shrivastav</span>
+                                    <div class="bar">
+                                        <div class="bar-fill" style="width: 80%"></div>
+                                    </div>
+                                    <span class="bar-value">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <h4>Student Performance by Subject</h4>
+                        <div class="chart-container">
+                            <div class="pie-chart">
+                                <div class="pie-slice excellent" data-percentage="35">
+                                    <span class="pie-label">Excellent (90%+)</span>
+                                </div>
+                                <div class="pie-slice good" data-percentage="40">
+                                    <span class="pie-label">Good (80-89%)</span>
+                                </div>
+                                <div class="pie-slice average" data-percentage="20">
+                                    <span class="pie-label">Average (70-79%)</span>
+                                </div>
+                                <div class="pie-slice below" data-percentage="5">
+                                    <span class="pie-label">Below Average (<70%)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <h4>Course Progress Overview</h4>
+                        <div class="chart-container">
+                            <div class="progress-chart">
+                                <div class="progress-item">
+                                    <span class="progress-label">Data Structures</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 75%"></div>
+                                    </div>
+                                    <span class="progress-value">75%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <span class="progress-label">Calculus</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 60%"></div>
+                                    </div>
+                                    <span class="progress-value">60%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <span class="progress-label">Physics</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 45%"></div>
+                                    </div>
+                                    <span class="progress-value">45%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <span class="progress-label">Chemistry</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 50%"></div>
+                                    </div>
+                                    <span class="progress-value">50%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <span class="progress-label">English</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 70%"></div>
+                                    </div>
+                                    <span class="progress-value">70%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Report Dashboard Section -->
+    <section class="student-dashboard" id="students">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Student Performance Dashboard</h2>
+                <p class="section-description">
+                    Comprehensive view of student performance across all semesters with detailed analytics and reporting
+                </p>
+            </div>
+            
+            <!-- Dashboard Controls -->
+            <div class="dashboard-controls">
+                <div class="search-filters">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Search by name or roll number...">
+                    </div>
+                    <div class="filter-group">
+                        <select id="performanceFilter" class="filter-select">
+                            <option value="">All Performance</option>
+                            <option value="excellent">Excellent (90%+)</option>
+                            <option value="good">Good (80-89%)</option>
+                            <option value="average">Average (70-79%)</option>
+                            <option value="below">Below Average (<70%)</option>
+                        </select>
+                        <button class="btn-secondary" id="exportBtn">
+                            <i class="fas fa-download"></i>
+                            Export Report
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Report Table -->
+            <div class="student-table-container">
+                <div class="table-header">
+                    <div class="table-row header-row">
+                        <div class="col-student">Student Details</div>
+                        <div class="col-attendance">Attendance</div>
+                        <div class="col-tests">Test Scores</div>
+                        <div class="col-assignments">Assignments</div>
+                        <div class="col-grade">Overall Grade</div>
+                        <div class="col-actions">Actions</div>
+                    </div>
+                </div>
+                <div class="table-body" id="studentTableBody">
+                    <!-- Student rows will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="btn-pagination" id="prevBtn" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                    Previous
+                </button>
+                <div class="pagination-info">
+                    <span id="pageInfo">Page 1 of 3</span>
+                </div>
+                <button class="btn-pagination" id="nextBtn">
+                    Next
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Teaching?</h2>
+                <p>Join thousands of educators who are already using Smart Scholar to enhance their teaching experience.</p>
+                <div class="cta-actions">
+                    <button class="btn-primary btn-large">
+                        <i class="fas fa-download"></i>
+                        Download Now
+                    </button>
+                    <button class="btn-outline btn-large">
+                        <i class="fas fa-calendar"></i>
+                        Schedule Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Smart Scholar</span>
+                    </div>
+                    <p>Empowering educators with intelligent tools for modern teaching.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Smart Scholar. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
